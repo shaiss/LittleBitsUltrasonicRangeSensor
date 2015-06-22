@@ -9,57 +9,32 @@
    The circuit:
 	* +V connection of the PING))) attached to +5V
 	* GND connection of the PING))) attached to ground
-	* SIG connection of the PING))) attached to digital pin 7
+	* SIG connection of the PING))) attached to digital pin 2
 
    http://www.arduino.cc/en/Tutorial/Ping
 
    created 3 Nov 2008
    by David A. Mellis
-   modified 30 Aug 2011
+   modified 06 Aug 2011
    by Tom Igoe
+	 modified 22 Jun 2015
+   by Shai Perednik shaiss@gmail.com
 
    This example code is in the public domain.
 
  */
 
-#include <TFT.h>  // Arduino LCD library
-#include <SPI.h>
 
 // this constant won't change.  It's the pin number
 // of the sensor's output:
-const int pingPin = 2;
-
-// pin definition for the Uno
-#define cs   10
-#define dc   9
-#define rst  8
-
-// create an instance of the library
-TFT TFTscreen = TFT(cs, dc, rst);
-
-// char array to print to the screen
-char sensorPrintout[6];
+const int pingPin = 2; //Sig pin of the Ping))) Sensor
+const int ledPin = 9; //The pin the LED is attached to
+const int brightness = 0; //set the initial value to null
 
 void setup() {
   // initialize serial communication:
   Serial.begin(9600);
-  
-    // Put this line at the beginning of every sketch that uses the GLCD:
-  TFTscreen.begin();
-
-  // clear the screen with a black background
-  TFTscreen.background(0, 0, 0);
-
-  // write the static text to the screen
-  // set the font color to white
-  TFTscreen.stroke(255, 255, 255);
-  // set the font size
-  TFTscreen.setTextSize(2);
-  // write the text to the top left corner of the screen
-  TFTscreen.text("Sensor Value :\n ", 0, 0);
-  // ste the font size very large for the loop
-  TFTscreen.setTextSize(5);
-  TFTscreen.text("in", 0, 60);
+	pinMode(ledPin, OUTPUT);  //declare ledPin as an output
 }
 
 void loop()
@@ -93,20 +68,16 @@ void loop()
   Serial.print("cm");
   Serial.println();
 
-  String sensorVal = String(inches);
-  //sensorVal += " in";
-  sensorVal.toCharArray(sensorPrintout, 6);
-  
-  
-  // set the font color
-  TFTscreen.stroke(255, 255, 255);
-  // print the sensor value
-  TFTscreen.text(sensorPrintout, 0, 20);
-  // wait for a moment
-  delay(100);
-  // erase the text you just wrote
-  TFTscreen.stroke(0, 0, 0);
-  TFTscreen.text(sensorPrintout, 0, 20);
+	//convert distance of object to brightness.  
+	//Ping))) range is 2cm - 3M/.78in - 118.11in
+	brightness = (((cm/300)*255)-255)*-1);  //closer == brighter.  If cm =0 returns 255.
+	//brightness = ((cm/300))*255; //farther == brighter.  If cm = 300 returns 255
+	
+	//write distance to LED
+	analogWrite(ledPin, brightness);
+
+	//delay to get a fading effect
+	delay(10);
 }
 
 long microsecondsToInches(long microseconds)
