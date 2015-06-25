@@ -7,9 +7,9 @@
    the distance of the object from the sensor.
 
    The circuit:
-	* +V connection of the PING))) attached to +5V
-	* GND connection of the PING))) attached to ground
-	* SIG connection of the PING))) attached to digital pin 2
+  * +V connection of the PING))) attached to +5V
+  * GND connection of the PING))) attached to ground
+  * SIG connection of the PING))) attached to digital pin 2
 
    http://www.arduino.cc/en/Tutorial/Ping
 
@@ -17,7 +17,7 @@
    by David A. Mellis
    modified 06 Aug 2011
    by Tom Igoe
-	 modified 22 Jun 2015
+   modified 22 Jun 2015
    by Shai Perednik shaiss@gmail.com
 
    This example code is in the public domain.
@@ -28,13 +28,13 @@
 // this constant won't change.  It's the pin number
 // of the sensor's output:
 const int pingPin = 2; //Sig pin of the Ping))) Sensor
-const int ledPin = 9; //The pin the LED is attached to
-const int brightness = 0; //set the initial value to null
+const int ledPin = 6; //The pin the LED is attached to
+float brightness = 0; //set the initial value to null
 
 void setup() {
   // initialize serial communication:
   Serial.begin(9600);
-	pinMode(ledPin, OUTPUT);  //declare ledPin as an output
+  pinMode(ledPin, OUTPUT);  //declare ledPin as an output
 }
 
 void loop()
@@ -62,22 +62,24 @@ void loop()
   inches = microsecondsToInches(duration);
   cm = microsecondsToCentimeters(duration);
 
-  Serial.print(inches);
-  Serial.print("in, ");
+  //Serial.print(inches);
+  //Serial.print("in, ");
   Serial.print(cm);
-  Serial.print("cm");
+  //Serial.print("cm");
   Serial.println();
 
-	//convert distance of object to brightness.  
-	//Ping))) range is 2cm - 3M/.78in - 118.11in
-	brightness = (((cm/300)*255)-255)*-1);  //closer == brighter.  If cm =0 returns 255.
-	//brightness = ((cm/300))*255; //farther == brighter.  If cm = 300 returns 255
-	
-	//write distance to LED
-	analogWrite(ledPin, brightness);
+  //convert distance of object to brightness.  
+  //Ping))) range is 2cm - 3M/.78in - 118.11in
+  //brightness = 144/300.00;
+  //brightness = ((((cm/300.00)*255)-255)*-1);  //closer == brighter.  If cm =0 returns 255.
+ //Serial.println(brightness);
+  brightness = ((cm/300.00))*255; //farther == brighter.  If cm = 300 returns 255
+  
+  //write distance to LED
+  analogWrite(ledPin, brightness);
 
-	//delay to get a fading effect
-	delay(10);
+  //delay to get a fading effect
+  delay(50);
 }
 
 long microsecondsToInches(long microseconds)
