@@ -24,17 +24,24 @@
 
  */
 
+#include <Wire.h>
+#define PCF8591 (0x90 >> 1) // I2C bus address
+
+const int analogPin = A0;
 
 // this constant won't change.  It's the pin number
 // of the sensor's output:
 const int pingPin = 2; //Sig pin of the Ping))) Sensor
 const int ledPin = 6; //The pin the LED is attached to
 float brightness = 0; //set the initial value to null
+int analogVolts = 0; //set initial value to null for voltage out
 
 void setup() {
   // initialize serial communication:
   Serial.begin(9600);
   pinMode(ledPin, OUTPUT);  //declare ledPin as an output
+
+  Wire.begin();
 }
 
 void loop()
@@ -78,6 +85,18 @@ void loop()
   //write distance to LED
   analogWrite(ledPin, brightness);
 
+  analogVolts = (int) brightness; //convert (aka cast) the brightness value from float to int
+  
+  //start write values to dac
+  Wire.beginTransmission(PCF8591); // wake up PCF8591
+  Wire.write(0x40); // control byte - turn on DAC (binary 1000000)
+  Wire.write(analogVolts); // value to send to DAC
+  Wire.endTransmission(); // end tranmission
+  //end write values to dac
+  
+  //Serial.println("apin" + analogRead(analogPin));
+  Serial.println(analogVolts);
+  
   //delay to get a fading effect
   delay(50);
 }
