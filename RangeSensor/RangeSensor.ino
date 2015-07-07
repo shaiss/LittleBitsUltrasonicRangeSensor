@@ -69,12 +69,6 @@ void loop()
   inches = microsecondsToInches(duration);
   cm = microsecondsToCentimeters(duration);
 
-  //Serial.print(inches);
-  //Serial.print("in, ");
-  Serial.print(cm);
-  //Serial.print("cm");
-  Serial.println();
-
   //convert distance of object to brightness.  
   //Ping))) range is 2cm - 3M/.78in - 118.11in
   //brightness = 144/300.00;
@@ -93,11 +87,17 @@ void loop()
   Wire.write(analogVolts); // value to send to DAC
   Wire.endTransmission(); // end tranmission
   //end write values to dac
+
+  //Serial.print(inches);
+  //Serial.print("in, ");
+  Serial.print(cm);
+  Serial.print("cm  | ");
+  Serial.print("brightness: ");
+  Serial.print(brightness);
+  Serial.print("  aout: ");
+  Serial.print(analogVolts);
+  Serial.println();
   
-  //Serial.println("apin" + analogRead(analogPin));
-  Serial.println(analogVolts);
-  
-  //delay to get a fading effect
   delay(50);
 }
 
