@@ -27,10 +27,10 @@
 #include <Wire.h>
 #define PCF8591 (0x90 >> 1) // I2C bus address
 
-const int analogPin = A0;
-
 // this constant won't change.  It's the pin number
 // of the sensor's output:
+const int analogPin = A0;
+const int slidebtn = 7;
 const int pingPin = 2; //Sig pin of the Ping))) Sensor
 const int ledPin = 6; //The pin the LED is attached to
 float brightness = 0; //set the initial value to null
