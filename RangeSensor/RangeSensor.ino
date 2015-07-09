@@ -29,23 +29,33 @@
 
 // this constant won't change.  It's the pin number
 // of the sensor's output:
-const int analogPin = A0;
+const int trimpot = A0;
 const int slidebtn = 7;
 const int pingPin = 2; //Sig pin of the Ping))) Sensor
 const int ledPin = 6; //The pin the LED is attached to
+
+//define some vars
 float brightness = 0; //set the initial value to null
 int analogVolts = 0; //set initial value to null for voltage out
+int trimpotval = 0; //potentiometer on trimpot pin's current position
+float maxrange = 0; //max range sensor is set to
 
 void setup() {
   // initialize serial communication:
   Serial.begin(9600);
   pinMode(ledPin, OUTPUT);  //declare ledPin as an output
+  pinMode(slidebtn, INPUT); //declare the slidebtn as an input
 
   Wire.begin();
 }
 
 void loop()
 {
+  //read trimpot's value
+  trimpotval = analogRead(trimpot);
+  maxrange = (trimpotval/1023)*300;
+  Serial.println(maxrange);
+  
   // establish variables for duration of the ping,
   // and the distance result in inches and centimeters:
   long duration, inches, cm;
@@ -71,10 +81,16 @@ void loop()
 
   //convert distance of object to brightness.  
   //Ping))) range is 2cm - 3M/.78in - 118.11in
-  //brightness = 144/300.00;
-  //brightness = ((((cm/300.00)*255)-255)*-1);  //closer == brighter.  If cm =0 returns 255.
- //Serial.println(brightness);
-  brightness = ((cm/300.00))*255; //farther == brighter.  If cm = 300 returns 255
+  if (slidebtn == HIGH) {
+    //if slide btn is HIGH or on, then sensor is in close mode
+    brightness = ((((cm/maxrange)*255)-255)*-1);  //closer == brighter.  If cm =0 returns 255.
+  }
+  else {
+    //if slide btn is LOW or off, then sensor is in far mode
+    brightness = ((cm/maxrange))*255; //farther == brighter.  If cm = 300 returns 255
+  }
+    
+  //Serial.println(brightness);
   
   //write distance to LED
   analogWrite(ledPin, brightness);
