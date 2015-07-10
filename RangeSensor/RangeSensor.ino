@@ -37,7 +37,7 @@ const int ledPin = 6; //The pin the LED is attached to
 //define some vars
 float brightness = 0; //set the initial value to null
 int analogVolts = 0; //set initial value to null for voltage out
-int trimpotval = 0; //potentiometer on trimpot pin's current position
+float trimpotval = 0; //potentiometer on trimpot pin's current position
 float maxrange = 0; //max range sensor is set to
 
 void setup() {
@@ -53,8 +53,8 @@ void loop()
 {
   //read trimpot's value
   trimpotval = analogRead(trimpot);
+
   maxrange = (trimpotval/1023)*300;
-  Serial.println(maxrange);
   
   // establish variables for duration of the ping,
   // and the distance result in inches and centimeters:
@@ -81,7 +81,7 @@ void loop()
 
   //convert distance of object to brightness.  
   //Ping))) range is 2cm - 3M/.78in - 118.11in
-  if (slidebtn == HIGH) {
+  if (digitalRead(slidebtn) == HIGH) {
     //if slide btn is HIGH or on, then sensor is in close mode
     brightness = ((((cm/maxrange)*255)-255)*-1);  //closer == brighter.  If cm =0 returns 255.
   }
@@ -112,6 +112,14 @@ void loop()
   Serial.print(brightness);
   Serial.print("  aout: ");
   Serial.print(analogVolts);
+  Serial.print("  | maxrange: ");
+  Serial.print(maxrange);
+  Serial.print("  | trimpot: ");
+  Serial.print(analogRead(trimpot));
+  Serial.print("  | trimpotval: ");
+  Serial.print(trimpotval);
+  Serial.print("  | slidebtn: ");
+  Serial.print(digitalRead(slidebtn));
   Serial.println();
   
   delay(50);
