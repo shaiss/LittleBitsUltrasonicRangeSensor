@@ -125,7 +125,7 @@ void loop()
   Serial.print(digitalRead(slidebtn));
   Serial.println();
   
-  delay(50);
+  delay(100);
 }
 
 long microsecondsToInches(long microseconds)
@@ -145,3 +145,24 @@ long microsecondsToCentimeters(long microseconds)
   // object we take half of the distance travelled.
   return microseconds / 29 / 2;
 }
+
+int normAnalog(int analogval)
+{
+  if (analogval < 341)  // Lowest third of the potentiometer's range (0-340)
+    {                  
+      analogval = (analogval * 3) / 4; // Normalize to 0-255
+    }
+    else if (analogval < 682) // Middle third of potentiometer's range (341-681)
+    {
+      analogval = ( (analogval-341) * 3) / 4; // Normalize to 0-255
+    }
+    else  // Upper third of potentiometer"s range (682-1023)
+    {
+      analogval = ( (analogval-683) * 3) / 4; // Normalize to 0-255
+    }
+
+    return analogval;
+}
+
+
+
