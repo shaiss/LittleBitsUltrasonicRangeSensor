@@ -89,6 +89,9 @@ void loop()
     //if slide btn is LOW or off, then sensor is in far mode
     brightness = ((cm/maxrange))*255; //farther == brighter.  If cm = 300 returns 255
   }
+
+  if (brightness > 255){brightness = 255;}
+  if (brightness < 0) {brightness = 0;}
     
   //Serial.println(brightness);
   
