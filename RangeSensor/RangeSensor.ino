@@ -48,14 +48,10 @@ void setup() {
   pinMode(ledPin, OUTPUT);  //declare ledPin as an output
   pinMode(slidebtn, INPUT); //declare the slidebtn as an input
 
-<<<<<<< HEAD
   // For Adafruit MCP4725A1 the address is 0x62 (default) or 0x63 (ADDR pin tied to VCC)
   // For MCP4725A0 the address is 0x60 or 0x61
   // For MCP4725A2 the address is 0x64 or 0x65
   dac.begin(0x60);  //china board from ebay is 0x60
-=======
-  dac.begin(0x62);
->>>>>>> origin/MCP4725
 }
 
 void loop()
@@ -107,13 +103,11 @@ void loop()
   //write distance to LED
   analogWrite(ledPin, brightness);
 
-  analogVolts = (int) brightness; //convert (aka cast) the brightness value from float to int
+  analogVolts = (int) brightness * 16.05; //convert (aka cast) the brightness value from float to int
   
   //start write values to dac
-<<<<<<< HEAD
-  analogVolts = analogVolts * 16; //upper range of mcp4725 is 4095
-=======
->>>>>>> origin/MCP4725
+  analogVolts = analogVolts; //upper range of mcp4725 is 4095
+
   dac.setVoltage(analogVolts, false);
   //end write values to dac
 
