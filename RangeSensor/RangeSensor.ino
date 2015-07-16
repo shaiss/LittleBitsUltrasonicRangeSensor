@@ -25,7 +25,9 @@
  */
 
 #include <Wire.h>
-#define PCF8591 (0x90 >> 1) // I2C bus address
+#include <Adafruit_MCP4725.h>
+
+Adafruit_MCP4725 dac;
 
 // this constant won't change.  It's the pin number
 // of the sensor's output:
@@ -46,7 +48,10 @@ void setup() {
   pinMode(ledPin, OUTPUT);  //declare ledPin as an output
   pinMode(slidebtn, INPUT); //declare the slidebtn as an input
 
-  Wire.begin();
+  // For Adafruit MCP4725A1 the address is 0x62 (default) or 0x63 (ADDR pin tied to VCC)
+  // For MCP4725A0 the address is 0x60 or 0x61
+  // For MCP4725A2 the address is 0x64 or 0x65
+  dac.begin(0x60);  //china board from ebay is 0x60
 }
 
 void loop()
@@ -101,10 +106,8 @@ void loop()
   analogVolts = (int) brightness; //convert (aka cast) the brightness value from float to int
   
   //start write values to dac
-  Wire.beginTransmission(PCF8591); // wake up PCF8591
-  Wire.write(0x40); // control byte - turn on DAC (binary 1000000)
-  Wire.write(analogVolts); // value to send to DAC
-  Wire.endTransmission(); // end tranmission
+  analogVolts = analogVolts * 16; //upper range of mcp4725 is 4095
+  dac.setVoltage(analogVolts, false);
   //end write values to dac
 
   //Serial.print(inches);
