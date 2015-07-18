@@ -32,9 +32,10 @@ Adafruit_MCP4725 dac;
 // this constant won't change.  It's the pin number
 // of the sensor's output:
 const int trimpot = A0;
-const int slidebtn = 7;
+const int slidebtn = 3;
 const int pingPin = 2; //Sig pin of the Ping))) Sensor
 const int ledPin = 6; //The pin the LED is attached to
+const int ledRangeMode = 13; //built in LED
 
 //define some vars
 float brightness = 0; //set the initial value to null
@@ -47,6 +48,13 @@ void setup() {
   Serial.begin(9600);
   pinMode(ledPin, OUTPUT);  //declare ledPin as an output
   pinMode(slidebtn, INPUT); //declare the slidebtn as an input
+  pinMode(ledRangeMode, OUTPUT); //indicate the slidebtn mode, close or far
+
+  //config vcc & gnd for mcp4725
+  pinMode(A3,OUTPUT);
+  pinMode(A2,OUTPUT);
+  digitalWrite(A3, HIGH); //set A3 VCC
+  digitalWrite(A2, LOW); //set A2 GND
 
   // For Adafruit MCP4725A1 the address is 0x62 (default) or 0x63 (ADDR pin tied to VCC)
   // For MCP4725A0 the address is 0x60 or 0x61
@@ -89,10 +97,12 @@ void loop()
   if (digitalRead(slidebtn) == HIGH) {
     //if slide btn is HIGH or on, then sensor is in close mode
     brightness = ((((cm/maxrange)*255)-255)*-1);  //closer == brighter.  If cm =0 returns 255.
+    digitalWrite(ledRangeMode, HIGH);
   }
   else {
     //if slide btn is LOW or off, then sensor is in far mode
     brightness = ((cm/maxrange))*255; //farther == brighter.  If cm = 300 returns 255
+    digitalWrite(ledRangeMode, LOW);
   }
 
   if (brightness > 255){brightness = 255;}
