@@ -24,11 +24,6 @@
 
  */
 
-#include <Wire.h>
-#include <Adafruit_MCP4725.h>
-
-Adafruit_MCP4725 dac;
-
 // this constant won't change.  It's the pin number
 // of the sensor's output:
 const int trimpot = A0;
@@ -53,13 +48,7 @@ void setup() {
   //config vcc & gnd for mcp4725
   pinMode(A3,OUTPUT);
   pinMode(A2,OUTPUT);
-  digitalWrite(A3, HIGH); //set A3 VCC
-  digitalWrite(A2, LOW); //set A2 GND
 
-  // For Adafruit MCP4725A1 the address is 0x62 (default) or 0x63 (ADDR pin tied to VCC)
-  // For MCP4725A0 the address is 0x60 or 0x61
-  // For MCP4725A2 the address is 0x64 or 0x65
-  dac.begin(0x60);  //china board from ebay is 0x60
 }
 
 void loop()
@@ -110,16 +99,8 @@ void loop()
     
   //Serial.println(brightness);
   
-  //write distance to LED
+  //write distance to LED //same pin used as output pin to RC Lowpass Filter, then to Littlebits SIG OUT
   analogWrite(ledPin, brightness);
-
-  analogVolts = (int) brightness * 16.05; //convert (aka cast) the brightness value from float to int
-  
-  //start write values to dac
-  analogVolts = analogVolts; //upper range of mcp4725 is 4095
-
-  dac.setVoltage(analogVolts, false);
-  //end write values to dac
 
   //Serial.print(inches);
   //Serial.print("in, ");
@@ -127,8 +108,6 @@ void loop()
   Serial.print("cm  | ");
   Serial.print("brightness: ");
   Serial.print(brightness);
-  Serial.print("  aout: ");
-  Serial.print(analogVolts);
   Serial.print("  | maxrange: ");
   Serial.print(maxrange);
   Serial.print("  | trimpot: ");
@@ -159,24 +138,5 @@ long microsecondsToCentimeters(long microseconds)
   // object we take half of the distance travelled.
   return microseconds / 29 / 2;
 }
-
-int normAnalog(int analogval)
-{
-  if (analogval < 341)  // Lowest third of the potentiometer's range (0-340)
-    {                  
-      analogval = (analogval * 3) / 4; // Normalize to 0-255
-    }
-    else if (analogval < 682) // Middle third of potentiometer's range (341-681)
-    {
-      analogval = ( (analogval-341) * 3) / 4; // Normalize to 0-255
-    }
-    else  // Upper third of potentiometer"s range (682-1023)
-    {
-      analogval = ( (analogval-683) * 3) / 4; // Normalize to 0-255
-    }
-
-    return analogval;
-}
-
 
 
