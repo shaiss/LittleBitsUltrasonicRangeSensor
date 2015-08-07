@@ -26,10 +26,10 @@
 
 // this constant won't change.  It's the pin number
 // of the sensor's output:
-const int trimpot = A0;
-const int slidebtn = 3;
-const int pingPin = 2; //Sig pin of the Ping))) Sensor
-const int ledPin = 6; //The pin the LED is attached to
+const int trimpot = A5;
+const int slidebtn = 10;
+const int pingPin = 11; //Sig pin of the Ping))) Sensor
+const int ledPin = 9; //The pin the LED is attached to
 const int ledRangeMode = 13; //built in LED
 
 //define some vars
