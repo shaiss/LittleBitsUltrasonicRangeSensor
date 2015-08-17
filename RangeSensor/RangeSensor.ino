@@ -26,11 +26,11 @@
 
 // this constant won't change.  It's the pin number
 // of the sensor's output:
-const int trimpot = A5;
-const int slidebtn = 10;
-const int pingPin = 11; //Sig pin of the Ping))) Sensor
-const int ledPin = 9; //The pin the LED is attached to
-const int ledRangeMode = 13; //built in LED
+const int trimpot = A2;
+const int slidebtn = 0;
+const int pingPin = 3; //Sig pin of the Ping))) Sensor
+const int ledPin = 1; //The pin the LED is attached to
+const int ledRangeMode = 2; //built in LED
 
 //define some vars
 float brightness = 0; //set the initial value to null
@@ -40,7 +40,7 @@ float maxrange = 0; //max range sensor is set to
 
 void setup() {
   // initialize serial communication:
-  Serial.begin(9600);
+  //Serial.begin(9600);
   pinMode(ledPin, OUTPUT);  //declare ledPin as an output
   pinMode(slidebtn, INPUT); //declare the slidebtn as an input
   pinMode(ledRangeMode, OUTPUT); //indicate the slidebtn mode, close or far
@@ -104,7 +104,7 @@ void loop()
 
   //Serial.print(inches);
   //Serial.print("in, ");
-  Serial.print(cm);
+  /*Serial.print(cm);
   Serial.print("cm  | ");
   Serial.print("brightness: ");
   Serial.print(brightness);
@@ -117,7 +117,7 @@ void loop()
   Serial.print("  | slidebtn: ");
   Serial.print(digitalRead(slidebtn));
   Serial.println();
-  
+  */
   delay(100);
 }
 
