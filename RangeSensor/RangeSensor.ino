@@ -85,13 +85,13 @@ void loop()
   //Ping))) range is 2cm - 3M/.78in - 118.11in
   if (digitalRead(slidebtn) == HIGH) {
     //if slide btn is HIGH or on, then sensor is in close mode
-    brightness = ((((cm/maxrange)*255)-255)*-1);  //closer == brighter.  If cm =0 returns 255.
-    digitalWrite(ledRangeMode, HIGH);
+    brightness = ((((cm/maxrange)*255)-255)*-1);  //closer == brighter/higher voltage.  If cm =0 returns 255.
+    digitalWrite(ledRangeMode, HIGH);//rangemode LED on
   }
   else {
     //if slide btn is LOW or off, then sensor is in far mode
-    brightness = ((cm/maxrange))*255; //farther == brighter.  If cm = 300 returns 255
-    digitalWrite(ledRangeMode, LOW);
+    brightness = ((cm/maxrange))*255; //farther == brighter/higher voltage.  If cm = 300 returns 255
+    digitalWrite(ledRangeMode, LOW); //rangemode LED off
   }
 
   if (brightness > 255){brightness = 255;}
