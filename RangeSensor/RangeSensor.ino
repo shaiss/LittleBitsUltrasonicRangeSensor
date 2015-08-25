@@ -45,9 +45,6 @@ void setup() {
   pinMode(slidebtn, INPUT); //declare the slidebtn as an input
   pinMode(ledRangeMode, OUTPUT); //indicate the slidebtn mode, close or far
 
-  //config vcc & gnd for mcp4725
-  pinMode(A3,OUTPUT);
-  pinMode(A2,OUTPUT);
 
 }
 
@@ -78,7 +75,7 @@ void loop()
   duration = pulseIn(pingPin, HIGH);
 
   // convert the time into a distance
-  inches = microsecondsToInches(duration);
+ // inches = microsecondsToInches(duration);
   cm = microsecondsToCentimeters(duration);
 
   //convert distance of object to brightness.  
@@ -102,22 +99,6 @@ void loop()
   //write distance to LED //same pin used as output pin to RC Lowpass Filter, then to Littlebits SIG OUT
   analogWrite(ledPin, brightness);
 
-  //Serial.print(inches);
-  //Serial.print("in, ");
-  /*Serial.print(cm);
-  Serial.print("cm  | ");
-  Serial.print("brightness: ");
-  Serial.print(brightness);
-  Serial.print("  | maxrange: ");
-  Serial.print(maxrange);
-  Serial.print("  | trimpot: ");
-  Serial.print(analogRead(trimpot));
-  Serial.print("  | trimpotval: ");
-  Serial.print(trimpotval);
-  Serial.print("  | slidebtn: ");
-  Serial.print(digitalRead(slidebtn));
-  Serial.println();
-  */
   delay(100);
 }
 
