@@ -1,3 +1,6 @@
+//8/27-This is the Arduino Nano version of the code with a DAC
+//Next steps: replace DAC with an RCLPF.  Remove uneeded code (in function).  Move to map() function.  Test NewPing() library
+
 /* Ping))) Sensor
 
    This sketch reads a PING))) ultrasonic rangefinder and returns the
