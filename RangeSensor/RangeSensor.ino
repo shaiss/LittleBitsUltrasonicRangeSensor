@@ -34,6 +34,7 @@ Adafruit_MCP4725 dac;
 const int trimpot = A0;
 const int slidebtn = 3;
 const int pingPin = 2; //Sig pin of the Ping))) Sensor
+const int echoPin = 4; //Pin used to recieve the ping signal on the HC04
 const int ledPin = 6; //The pin the LED is attached to
 const int ledRangeMode = 13; //built in LED
 
@@ -49,6 +50,8 @@ void setup() {
   pinMode(ledPin, OUTPUT);  //declare ledPin as an output
   pinMode(slidebtn, INPUT); //declare the slidebtn as an input
   pinMode(ledRangeMode, OUTPUT); //indicate the slidebtn mode, close or far
+  pinMode(echoPin, INPUT); //set the echopin as an Input since all it does is recieves
+  pinMode(pingPin, OUTPUT); //set the pingpin as an Output since it's only sening out
 
   //config vcc & gnd for mcp4725
   pinMode(A3,OUTPUT);
@@ -75,7 +78,6 @@ void loop()
 
   // The PING))) is triggered by a HIGH pulse of 2 or more microseconds.
   // Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
-  pinMode(pingPin, OUTPUT);
   digitalWrite(pingPin, LOW);
   delayMicroseconds(2);
   digitalWrite(pingPin, HIGH);
@@ -85,8 +87,7 @@ void loop()
   // The same pin is used to read the signal from the PING))): a HIGH  
   // pulse whose duration is the time (in microseconds) from the sending
   // of the ping to the reception of its echo off of an object.
-  pinMode(pingPin, INPUT);
-  duration = pulseIn(pingPin, HIGH);
+   duration = pulseIn(echoPin, HIGH);
 
   // convert the time into a distance
   inches = microsecondsToInches(duration);
