@@ -4,7 +4,7 @@
 *eMail=
 *
 *Project=RangeSensorBBProto
-*Date=00:33:24
+*Date=08:45:40
 *CreatedBy=Fritzing 0.9.2b.11.19.8d2d5970658f0bed09c661c9ea9a515b5f40f44c
 *
 *
@@ -14,26 +14,25 @@
 *
 *No;Value;Package;X;Y;Rotation;Side;Name
 1;;;10.5012;-17.4957;90;Bottom;TXT2
-2;;;18.9042;-10.0797;0;Bottom;TXT1
-3;;;18.4414;-18.1242;-90;Bottom;Sensor
+2;;;18.6753;-17.1242;-90;Bottom;Sensor
+3;;;18.9042;-10.0797;0;Bottom;TXT1
 4;;;11.9578;-17.97;90;Bottom;TXT2
-5;;THT;10.1684;-30.9392;90;Bottom;IN M Bit
+5;;THT;10.1684;-3.23921;90;Bottom;F Out Bit
 6;;;17.245;-10.4274;-90;Bottom;IMG1
-7;;THT;10.1684;-3.23921;90;Bottom;F Out Bit
-8;;;18.415;-13.6144;0;Bottom;Via2
-9;;;8.16717;-19.7145;90;Bottom;TXT2
-10;;;15.0084;-2.33921;0;Bottom;Hole2
-11;;;16.637;-23.5204;0;Bottom;Via1
-12;;;15.0084;-30.9392;0;Bottom;Hole3
-13;10µF;100 mil [THT, electrolytic];2.73838;-25.1392;0;Bottom;10uF
-14;;;10.0304;-9.99596;0;Bottom;TXT1
-15;;dip;10.1984;-17.8292;0;Bottom;Attiny85
-16;20mA;3 mm [THT];17.8574;-26.1394;-90;Bottom;LED
-17;;;5.30838;-30.9392;0;Bottom;Hole4
-18;180;THT;11.0084;-26.0517;0;Bottom;180R
-19;;;2.60387;-27.6761;0;Bottom;TXT2
-20;3.9k;THT;2.42088;-18.1392;90;Bottom;3K9
-21;;;5.40838;-2.43921;0;Bottom;Hole1
-22;;;2.74703;-13.7303;0;Bottom;TXT1
-23;;switch-spdt_lock.007s;14.2906;-7.13921;90;Bottom;S1
-24;;THT;4.05473;-8.68556;-90;Bottom;Max Range
+7;;THT;10.1684;-30.9392;90;Bottom;IN M Bit
+8;;;8.16717;-19.7145;90;Bottom;TXT2
+9;;;15.0084;-2.33921;0;Bottom;Hole2
+10;;;10.0304;-9.99596;0;Bottom;TXT1
+11;;;15.0084;-30.9392;0;Bottom;Hole3
+12;10µF;100 mil [THT, electrolytic];2.73838;-25.1392;0;Bottom;10uF
+13;;dip;10.1984;-18.0292;0;Bottom;Attiny85
+14;20mA;3 mm [THT];16.9594;-25.7391;90;Bottom;LED
+15;;;11.811;-21.4884;0;Bottom;Via1
+16;;;5.30838;-30.9392;0;Bottom;Hole4
+17;180;THT;11.0084;-26.0517;0;Bottom;180R
+18;;;2.60387;-27.6761;0;Bottom;TXT2
+19;;;2.74703;-13.7303;0;Bottom;TXT1
+20;;;5.40838;-2.43921;0;Bottom;Hole1
+21;3.9k;THT;3.00838;-18.1267;90;Bottom;3K9
+22;;switch-spdt_lock.007s;14.2906;-7.13921;90;Bottom;S1
+23;;THT;4.05473;-8.68556;-90;Bottom;Max Range
