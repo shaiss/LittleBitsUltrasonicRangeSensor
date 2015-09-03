@@ -4,7 +4,7 @@
 *eMail=
 *
 *Project=RangeSensorBBProto
-*Date=12:39:12
+*Date=13:06:07
 *CreatedBy=Fritzing 0.9.2b.11.19.8d2d5970658f0bed09c661c9ea9a515b5f40f44c
 *
 *
@@ -13,7 +13,7 @@
 *Rotation in degree (0-360, math. pos.)
 *
 *No;Value;Package;X;Y;Rotation;Side;Name
-1;;;17.378;-14.4378;90;Bottom;TXT2
+1;;;17.2536;-19.7884;90;Bottom;TXT2
 2;;;14.8208;-27.4142;90;Bottom;TXT3
 3;;;10.0303;-9.99601;0;Bottom;TXT1
 4;180;THT;11.0084;-26.0518;0;Bottom;180R
@@ -24,23 +24,23 @@
 9;;dip;10.1984;-18.0293;0;Bottom;Attiny85
 10;;THT;10.1685;-3.23929;90;Bottom;F Out Bit
 11;;;5.40837;-2.43933;0;Bottom;Hole1
-12;;;8.83856;-18.1248;90;Bottom;TXT2
-13;;;2.60395;-27.6761;0;Bottom;TXT2
-14;;;15.0084;-30.9393;0;Bottom;Hole3
-15;;;10.1545;-32.2417;0;Bottom;TXT2
-16;;switch-spdt_lock.007s;14.2905;-7.13926;90;Bottom;S1
-17;;;18.0765;-22.671;-90;Bottom;IMG2
-18;;;18.6752;-17.1242;-90;Bottom;Sensor
+12;;;18.7414;-17.2668;-90;Bottom;Sensor
+13;;;8.83856;-18.1248;90;Bottom;TXT2
+14;;;2.60395;-27.6761;0;Bottom;TXT2
+15;;;15.0084;-30.9393;0;Bottom;Hole3
+16;;;10.1545;-32.2417;0;Bottom;TXT2
+17;;switch-spdt_lock.007s;14.2905;-7.13926;90;Bottom;S1
+18;;;18.0765;-22.671;-90;Bottom;IMG2
 19;;;10.1489;-0.764961;0;Bottom;TXT2
 20;;;5.30846;-30.9393;0;Bottom;Hole4
 21;;;10.3851;-18.1947;90;Bottom;TXT2
-22;;;11.8109;-21.4884;0;Bottom;Via1
-23;10µF;100 mil [THT, electrolytic];2.7384;-25.1393;0;Bottom;10uF
-24;20mA;3 mm [THT];16.9594;-25.7391;90;Bottom;LED
-25;;THT;4.05455;-8.68561;-90;Bottom;Max Range
+22;10µF;100 mil [THT, electrolytic];2.7384;-25.1393;0;Bottom;10uF
+23;20mA;3 mm [THT];16.9594;-25.7391;90;Bottom;LED
+24;;THT;4.05455;-8.68561;-90;Bottom;Max Range
+25;;;17.3366;-14.6321;-90;Bottom;TXT2
 26;;;18.3642;-5.50088;0;Bottom;TXT2
 27;;;16.9305;-10.7087;-90;Bottom;IMG1
 28;;;1.7678;-13.8978;-90;Bottom;IMG3
 29;;THT;10.1685;-30.9393;90;Bottom;IN M Bit
-30;;;17.2121;-17.0073;90;Bottom;TXT2
+30;;;17.2951;-17.3391;90;Bottom;TXT2
 31;3.9k;THT;3.00821;-18.1268;90;Bottom;3K9
