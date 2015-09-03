@@ -4,7 +4,7 @@
 *eMail=
 *
 *Project=RangeSensorBBProto
-*Date=09:15:48
+*Date=09:21:35
 *CreatedBy=Fritzing 0.9.2b.11.19.8d2d5970658f0bed09c661c9ea9a515b5f40f44c
 *
 *
@@ -13,32 +13,32 @@
 *Rotation in degree (0-360, math. pos.)
 *
 *No;Value;Package;X;Y;Rotation;Side;Name
-1;;;18.6753;-17.1242;-90;Bottom;Sensor
+1;;;8.83866;-18.1248;90;Bottom;TXT2
 2;;;10.1545;-32.2417;0;Bottom;TXT2
-3;;;8.83866;-18.1248;90;Bottom;TXT2
-4;;;18.0764;-22.6709;-90;Bottom;IMG2
-5;;;18.9042;-10.0797;0;Bottom;TXT1
+3;;;18.6753;-17.1242;-90;Bottom;Sensor
+4;;;18.9042;-10.0797;0;Bottom;TXT1
+5;;;18.0764;-22.6709;-90;Bottom;IMG2
 6;;;10.3851;-18.1947;90;Bottom;TXT2
 7;;THT;10.1684;-3.23921;90;Bottom;F Out Bit
 8;;;16.9305;-10.7087;-90;Bottom;IMG1
 9;;THT;10.1684;-30.9392;90;Bottom;IN M Bit
 10;;;0.603774;-16.1199;90;Bottom;TXT2
 11;;;15.0084;-2.33921;0;Bottom;Hole2
-12;;;15.0084;-30.9392;0;Bottom;Hole3
-13;10µF;100 mil [THT, electrolytic];2.73838;-25.1392;0;Bottom;10uF
-14;;;10.0304;-9.99596;0;Bottom;TXT1
-15;;dip;10.1984;-18.0292;0;Bottom;Attiny85
-16;;;18.3643;-5.50081;0;Bottom;TXT2
+12;;;10.0304;-9.99596;0;Bottom;TXT1
+13;;;15.0084;-30.9392;0;Bottom;Hole3
+14;10µF;100 mil [THT, electrolytic];2.73838;-25.1392;0;Bottom;10uF
+15;;;18.3643;-5.50081;0;Bottom;TXT2
+16;;dip;10.1984;-18.0292;0;Bottom;Attiny85
 17;20mA;3 mm [THT];16.9594;-25.7391;90;Bottom;LED
 18;;;10.1491;-0.764935;0;Bottom;TXT2
 19;;;11.811;-21.4884;0;Bottom;Via1
 20;;;5.30838;-30.9392;0;Bottom;Hole4
-21;;;1.76777;-13.8978;-90;Bottom;IMG3
-22;180;THT;11.0084;-26.0517;0;Bottom;180R
+21;180;THT;11.0084;-26.0517;0;Bottom;180R
+22;;;1.76777;-13.8978;-90;Bottom;IMG3
 23;;;14.8209;-27.4142;90;Bottom;TXT3
 24;;;2.60387;-27.6761;0;Bottom;TXT2
-25;3.9k;THT;3.00838;-18.1267;90;Bottom;3K9
+25;;;2.74703;-13.7303;0;Bottom;TXT1
 26;;;5.40838;-2.43921;0;Bottom;Hole1
-27;;;2.74703;-13.7303;0;Bottom;TXT1
+27;3.9k;THT;3.00838;-18.1267;90;Bottom;3K9
 28;;switch-spdt_lock.007s;14.2906;-7.13921;90;Bottom;S1
 29;;THT;4.05473;-8.68556;-90;Bottom;Max Range
