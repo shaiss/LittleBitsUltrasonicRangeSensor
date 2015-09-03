@@ -8,9 +8,9 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="22.692987mm"
-   height="28.01424mm"
-   viewBox="-147.32 -68.56 22.692987 28.014241"
+   width="20.377947mm"
+   height="25.961596mm"
+   viewBox="-147.32 -68.56 20.377947 25.961596"
    id="svg2"
    inkscape:version="0.91 r13725"
    sodipodi:docname="pcb_board.svg">
@@ -44,12 +44,12 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="5.9136918"
-     inkscape:cx="40.159439"
-     inkscape:cy="49.196246"
+     inkscape:cx="-17.697122"
+     inkscape:cy="29.297215"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer4" />
+     inkscape:current-layer="silkscreen" />
   <title
      id="title4">C:/Users/peredniks/OneDrive/Arduino/VirtualBreadboard/w9-proto/hardware/LB-BIT-w9_PROTO-v03(3_3)/LB_BIT_w9_PROTO-v03(3_3).brd</title>
   <desc
@@ -155,592 +155,353 @@ circle.j0 {fill:#ffffff; }
   </defs>
   <g
      inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:label="connector_top"
-     style="display:none">
+     id="layer7"
+     inkscape:label="layer1"
+     style="display:inline"
+     transform="translate(-1.2069514,-1.0346402)">
     <g
-       style="display:inline"
-       transform="translate(-142.52885,-34.737877)"
-       id="g311">
-      <title
-         id="title313">PART W9BSM1</title>
-      <line
-         class="l21"
-         x1="11.945"
-         y1="-26.415001"
-         x2="11.445"
-         y2="-25.915001"
-         style="fill:none;stroke:#c8c8c8;stroke-width:0.25;stroke-linecap:round"
-         id="line317" />
-      <line
-         class="l21"
-         x1="11.445"
-         y1="-25.915001"
-         x2="10.945"
-         y2="-26.415001"
-         style="fill:none;stroke:#c8c8c8;stroke-width:0.25;stroke-linecap:round"
-         id="line319" />
-      <line
-         class="l21"
-         x1="11.445"
-         y1="-25.915001"
-         x2="11.445"
-         y2="-27.915001"
-         style="fill:none;stroke:#c8c8c8;stroke-width:0.25;stroke-linecap:round"
-         id="line321" />
-      <line
-         class="l20"
-         x1="0.205"
-         y1="-29.415001"
-         x2="0.255"
-         y2="-29.415001"
-         style="fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         id="line339" />
-      <line
-         class="l20"
-         x1="12.955"
-         y1="-29.415001"
-         x2="13.005"
-         y2="-29.415001"
-         style="fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         id="line343" />
-      <text
-         class="l21"
-         style="font-size:1.39699996px;font-family:sans-serif;text-anchor:end;fill:#c8c8c8"
-         transform="translate(7.215,-31.499)"
-         id="text359">M</text>
-      <circle
-         class="j29"
-         cx="4.0650001"
-         cy="-30.415001"
-         r="0.85000002"
-         id="circle361"
-         style="fill:#c8c8c8" />
-      <circle
-         class="j30"
-         cx="4.0650001"
-         cy="-30.415001"
-         r="0.85000002"
-         id="circle363"
-         style="fill:#c8c8c8" />
-      <circle
-         class="j17"
-         cx="4.0650001"
-         cy="-30.415001"
-         r="0.75"
-         id="circle365"
-         style="fill:#32c832" />
-      <circle
-         class="j0"
-         cx="4.0650001"
-         cy="-30.415001"
-         r="0.5"
-         id="circle367"
-         style="fill:#ffffff" />
-      <path
-         class="l44"
-         style="fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
-         d="m 3.045,-29.395 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,0 0,-2.04 m 2.04,2.04 0,-2.04"
-         id="path369"
-         inkscape:connector-curvature="0" />
-      <circle
-         class="j29"
-         cx="6.605"
-         cy="-30.415001"
-         r="0.85000002"
-         id="circle371"
-         style="fill:#c8c8c8" />
-      <circle
-         class="j30"
-         cx="6.605"
-         cy="-30.415001"
-         r="0.85000002"
-         id="circle373"
-         style="fill:#c8c8c8" />
-      <circle
-         class="j17"
-         cx="6.605"
-         cy="-30.415001"
-         r="0.75"
-         id="circle375"
-         style="fill:#32c832" />
-      <circle
-         class="j0"
-         cx="6.605"
-         cy="-30.415001"
-         r="0.5"
-         id="circle377"
-         style="fill:#ffffff" />
-      <path
-         class="l44"
-         style="fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
-         d="m 5.585,-29.395 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,0 0,-2.04 m 2.04,2.04 0,-2.04"
-         id="path379"
-         inkscape:connector-curvature="0" />
-      <circle
-         class="j29"
-         cx="9.1450005"
-         cy="-30.415001"
-         r="0.85000002"
-         id="circle381"
-         style="fill:#c8c8c8" />
-      <circle
-         class="j30"
-         cx="9.1450005"
-         cy="-30.415001"
-         r="0.85000002"
-         id="circle383"
-         style="fill:#c8c8c8" />
-      <circle
-         class="j17"
-         cx="9.1450005"
-         cy="-30.415001"
-         r="0.75"
-         id="circle385"
-         style="fill:#32c832" />
-      <circle
-         class="j0"
-         cx="9.1450005"
-         cy="-30.415001"
-         r="0.5"
-         id="circle387"
-         style="fill:#ffffff" />
-      <path
-         class="l44"
-         style="fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
-         d="m 8.125,-29.395 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,0 0,-2.04 m 2.04,2.04 0,-2.04"
-         id="path389"
-         inkscape:connector-curvature="0" />
-      <circle
-         class="l20"
-         cx="11.425"
-         cy="-30.415001"
-         r="0.69999999"
-         style="fill:none;stroke:#000000;stroke-width:0.005"
-         id="circle391" />
-      <path
-         class="l45"
-         style="fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
-         d="m 10.405,-29.395 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,-1.02 2.04,0"
-         id="path393"
-         inkscape:connector-curvature="0" />
-      <circle
-         class="l20"
-         cx="1.785"
-         cy="-30.415001"
-         r="0.69999999"
-         style="fill:none;stroke:#000000;stroke-width:0.005"
-         id="circle395" />
-      <path
-         class="l45"
-         style="fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
-         d="m 0.765,-29.395 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,-1.02 2.04,0"
-         id="path397"
-         inkscape:connector-curvature="0" />
-    </g>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="connector_bottom"
-     style="display:none">
-    <g
-       transform="translate(-142.52885,-34.737877)"
-       id="g229">
-      <title
-         id="title231">PART W9BSF1</title>
-      <line
-         class="l20"
-         x1="13.005"
-         y1="-10.215"
-         x2="12.955"
-         y2="-10.215"
-         style="fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         id="line265" />
-      <line
-         class="l20"
-         x1="0.255"
-         y1="-10.215"
-         x2="0.205"
-         y2="-10.215"
-         style="fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         id="line269" />
-      <text
-         class="l21"
-         style="font-size:1.39699996px;font-family:sans-serif;fill:#c8c8c8"
-         transform="translate(6.155,-7.415)"
-         id="text271">F</text>
-      <circle
-         class="j29"
-         cx="4.0650001"
-         cy="-10.045"
-         r="0.85000002"
-         id="circle273"
-         style="fill:#c8c8c8" />
-      <circle
-         class="j30"
-         cx="4.0650001"
-         cy="-10.045"
-         r="0.85000002"
-         id="circle275"
-         style="fill:#c8c8c8" />
-      <circle
-         class="j17"
-         cx="4.0650001"
-         cy="-10.045"
-         r="0.75"
-         id="circle277"
-         style="fill:#32c832" />
-      <circle
-         class="j0"
-         cx="4.0650001"
-         cy="-10.045"
-         r="0.5"
-         id="circle279"
-         style="fill:#ffffff" />
-      <path
-         class="l44"
-         style="fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
-         d="m 3.045,-9.025 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,0 0,-2.04 m 2.04,2.04 0,-2.04"
-         id="path281"
-         inkscape:connector-curvature="0" />
-      <circle
-         class="j29"
-         cx="6.605"
-         cy="-10.045"
-         r="0.85000002"
-         id="circle283"
-         style="fill:#c8c8c8" />
-      <circle
-         class="j30"
-         cx="6.605"
-         cy="-10.045"
-         r="0.85000002"
-         id="circle285"
-         style="fill:#c8c8c8" />
-      <circle
-         class="j17"
-         cx="6.605"
-         cy="-10.045"
-         r="0.75"
-         id="circle287"
-         style="fill:#32c832" />
-      <circle
-         class="j0"
-         cx="6.605"
-         cy="-10.045"
-         r="0.5"
-         id="circle289"
-         style="fill:#ffffff" />
-      <path
-         class="l44"
-         style="fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
-         d="m 5.585,-9.025 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,0 0,-2.04 m 2.04,2.04 0,-2.04"
-         id="path291"
-         inkscape:connector-curvature="0" />
-      <circle
-         class="j29"
-         cx="9.1450005"
-         cy="-10.045"
-         r="0.85000002"
-         id="circle293"
-         style="fill:#c8c8c8" />
-      <circle
-         class="j30"
-         cx="9.1450005"
-         cy="-10.045"
-         r="0.85000002"
-         id="circle295"
-         style="fill:#c8c8c8" />
-      <circle
-         class="j17"
-         cx="9.1450005"
-         cy="-10.045"
-         r="0.75"
-         id="circle297"
-         style="fill:#32c832" />
-      <circle
-         class="j0"
-         cx="9.1450005"
-         cy="-10.045"
-         r="0.5"
-         id="circle299"
-         style="fill:#ffffff" />
-      <path
-         class="l44"
-         style="fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
-         d="m 8.125,-9.025 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,0 0,-2.04 m 2.04,2.04 0,-2.04"
-         id="path301"
-         inkscape:connector-curvature="0" />
-      <circle
-         class="l20"
-         cx="1.785"
-         cy="-9.2150002"
-         r="0.69999999"
-         style="fill:none;stroke:#000000;stroke-width:0.005"
-         id="circle303" />
-      <path
-         class="l45"
-         style="fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
-         d="m 0.765,-8.195 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,-1.02 2.04,0"
-         id="path305"
-         inkscape:connector-curvature="0" />
-      <circle
-         class="l20"
-         cx="11.425"
-         cy="-9.2150002"
-         r="0.69999999"
-         style="fill:none;stroke:#000000;stroke-width:0.005"
-         id="circle307" />
-      <path
-         class="l45"
-         style="fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
-         d="m 10.405,-8.195 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,-1.02 2.04,0"
-         id="path309"
-         inkscape:connector-curvature="0" />
-    </g>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="milling"
-     style="display:none">
-    <line
-       class="l46"
-       x1="-142.83456"
-       y1="-41.018196"
-       x2="-129.05681"
-       y2="-41.018196"
-       style="display:inline;fill:none;stroke:#32c8c8;stroke-width:0.99919432;stroke-linecap:round"
-       id="line251" />
-    <line
-       class="l46"
-       x1="-129.02385"
-       y1="-68.052879"
-       x2="-129.02385"
-       y2="-63.652874"
-       style="display:inline;fill:none;stroke:#32c8c8;stroke-width:1;stroke-linecap:round"
-       id="line349" />
-    <line
-       class="l46"
-       x1="-142.82385"
-       y1="-68.052879"
-       x2="-142.82385"
-       y2="-63.652874"
-       style="display:inline;fill:none;stroke:#32c8c8;stroke-width:1;stroke-linecap:round"
-       id="line353" />
-    <line
-       class="l46"
-       x1="-142.82385"
-       y1="-41.052876"
-       x2="-142.82385"
-       y2="-45.452877"
-       style="display:inline;fill:none;stroke:#32c8c8;stroke-width:1;stroke-linecap:round"
-       id="line249" />
-    <line
-       class="l46"
-       x1="-129.02385"
-       y1="-41.052876"
-       x2="-129.02385"
-       y2="-45.452877"
-       style="display:inline;fill:none;stroke:#32c8c8;stroke-width:1;stroke-linecap:round"
-       id="line253" />
-    <line
-       class="l46"
-       x1="-146.12386"
-       y1="-45.452877"
-       x2="-142.82387"
-       y2="-45.452877"
-       style="display:inline;fill:none;stroke:#32c8c8;stroke-width:1;stroke-linecap:round"
-       id="line245" />
-    <line
-       class="l46"
-       x1="-125.72385"
-       y1="-45.452877"
-       x2="-129.02386"
-       y2="-45.452877"
-       style="display:inline;fill:none;stroke:#32c8c8;stroke-width:1;stroke-linecap:round"
-       id="line255" />
-    <line
-       class="l46"
-       x1="-142.27386"
-       y1="-45.452873"
-       x2="-142.82385"
-       y2="-45.452873"
-       style="display:inline;fill:none;stroke:#32c8c8;stroke-width:1;stroke-linecap:round"
-       id="line247" />
-    <path
-       class="l20"
-       d="m -129.57386,-45.952877 a 0.50000002,0.50000002 0 1 0 0,1"
-       style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-       id="path261"
-       inkscape:connector-curvature="0" />
-    <line
-       class="l46"
-       x1="-146.62386"
-       y1="-45.452877"
-       x2="-146.62386"
-       y2="-63.652878"
-       style="fill:none;stroke:#32c8c8;stroke-width:1;stroke-linecap:round"
-       id="line35" />
-    <line
-       class="l46"
-       x1="-125.22385"
-       y1="-45.452877"
-       x2="-125.22385"
-       y2="-63.652878"
-       style="fill:none;stroke:#32c8c8;stroke-width:1;stroke-linecap:round"
-       id="line41" />
-    <line
-       class="l46"
-       x1="-129.06172"
-       y1="-68.062424"
-       x2="-142.86171"
-       y2="-68.062424"
-       style="display:inline;fill:none;stroke:#32c8c8;stroke-width:1;stroke-linecap:round"
-       id="line351" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="board"
-     style="display:inline">
-    <g
-       id="g4091">
+       id="g5422"
+       inkscape:label="#board">
       <g
-         transform="translate(-142.52885,-34.737875)"
-         id="surface0">
-        <line
-           id="line31"
-           style="fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-           y2="-11.215"
-           x2="-3.595"
-           y1="-28.415001"
-           x1="-3.595"
-           class="l20" />
-        <line
-           id="line33"
-           style="fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-           y2="-28.415001"
-           x2="16.805"
-           y1="-11.215"
-           x1="16.805"
-           class="l20" />
+         id="board">
+        <path
+           inkscape:label="#board"
+           style="fill:#005900;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m -142.29517,-35.920176 0,-1.694186 0.12298,0 c 0.0723,0 0.18047,-0.0575 0.26248,-0.139499 0.1152,-0.115208 0.13949,-0.179158 0.13949,-0.367246 0,-0.182134 -0.0257,-0.254554 -0.12823,-0.361598 l -0.12824,-0.133851 -2.04318,0 -2.04319,0 0,-15.928012 0,-8.590235 1.92088,-0.0011 c 1.05648,-6.21e-4 2.0062,-0.02092 2.11048,-0.0451 0.24247,-0.05621 0.31148,-0.154432 0.31148,-0.443255 0,-0.30667 -0.0609,-0.407345 -0.31428,-0.519422 l -0.21067,-0.09319 0,-1.644228 0,-1.644228 6.37109,0 6.37109,0 0,1.644228 0,1.644228 -0.21068,0.09319 c -0.25351,0.112141 -0.31428,0.212732 -0.31428,0.520224 0,0.189207 0.0233,0.255358 0.12311,0.349133 l 0.12311,0.115697 2.04831,0.0134 2.04831,0.0134 0,8.588762 0,15.926539 -2.03757,0 -2.03757,0 -0.13385,0.128238 c -0.11092,0.106269 -0.13385,0.168216 -0.13385,0.361597 0,0.194293 0.0233,0.256714 0.1395,0.37286 0.082,0.082 0.24709,0.210142 0.26248,0.139499 l 0.12298,0 0,1.694185 0,1.694186 -6.37109,0 -6.37109,0 0,-1.694186 z"
+           id="pcb"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccscsccccccccscccccccccsccccccccsscsccccccc" />
         <g
-           id="g59">
-          <title
-             id="title61">PART DRILEGEND</title>
+           id="boardoutline">
+          <line
+             class="l20"
+             x1="-142.32385"
+             y1="-64.152878"
+             x2="-142.27385"
+             y2="-64.152878"
+             style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
+             id="line339" />
+          <line
+             class="l20"
+             x1="-129.57385"
+             y1="-64.152878"
+             x2="-129.52385"
+             y2="-64.152878"
+             style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
+             id="line343" />
+          <circle
+             class="j29"
+             cx="-138.46385"
+             cy="-65.152878"
+             r="0.85000002"
+             id="circle361"
+             style="display:inline;fill:#c8c8c8" />
+          <circle
+             class="j30"
+             cx="-138.46385"
+             cy="-65.152878"
+             r="0.85000002"
+             id="circle363"
+             style="display:inline;fill:#c8c8c8" />
+          <circle
+             class="j17"
+             cx="-138.46385"
+             cy="-65.152878"
+             r="0.75"
+             id="circle365"
+             style="display:inline;fill:#32c832" />
+          <circle
+             class="j0"
+             cx="-138.46385"
+             cy="-65.152878"
+             r="0.5"
+             id="circle367"
+             style="display:inline;fill:#ffffff" />
+          <path
+             class="l44"
+             style="display:inline;fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
+             d="m -139.48385,-64.132876 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,0 0,-2.04 m 2.04,2.04 0,-2.04"
+             id="path369"
+             inkscape:connector-curvature="0" />
+          <circle
+             class="j29"
+             cx="-135.92384"
+             cy="-65.152878"
+             r="0.85000002"
+             id="circle371"
+             style="display:inline;fill:#c8c8c8" />
+          <circle
+             class="j30"
+             cx="-135.92384"
+             cy="-65.152878"
+             r="0.85000002"
+             id="circle373"
+             style="display:inline;fill:#c8c8c8" />
+          <circle
+             class="j17"
+             cx="-135.92384"
+             cy="-65.152878"
+             r="0.75"
+             id="circle375"
+             style="display:inline;fill:#32c832" />
+          <circle
+             class="j0"
+             cx="-135.92384"
+             cy="-65.152878"
+             r="0.5"
+             id="circle377"
+             style="display:inline;fill:#ffffff" />
+          <path
+             class="l44"
+             style="display:inline;fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
+             d="m -136.94385,-64.132876 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,0 0,-2.04 m 2.04,2.04 0,-2.04"
+             id="path379"
+             inkscape:connector-curvature="0" />
+          <circle
+             class="j29"
+             cx="-133.38385"
+             cy="-65.152878"
+             r="0.85000002"
+             id="circle381"
+             style="display:inline;fill:#c8c8c8" />
+          <circle
+             class="j30"
+             cx="-133.38385"
+             cy="-65.152878"
+             r="0.85000002"
+             id="circle383"
+             style="display:inline;fill:#c8c8c8" />
+          <circle
+             class="j17"
+             cx="-133.38385"
+             cy="-65.152878"
+             r="0.75"
+             id="circle385"
+             style="display:inline;fill:#32c832" />
+          <circle
+             class="j0"
+             cx="-133.38385"
+             cy="-65.152878"
+             r="0.5"
+             id="circle387"
+             style="display:inline;fill:#ffffff" />
+          <path
+             class="l44"
+             style="display:inline;fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
+             d="m -134.40385,-64.132876 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,0 0,-2.04 m 2.04,2.04 0,-2.04"
+             id="path389"
+             inkscape:connector-curvature="0" />
+          <circle
+             class="l20"
+             cx="-131.10385"
+             cy="-65.152878"
+             r="0.69999999"
+             style="display:inline;fill:none;stroke:#000000;stroke-width:0.005"
+             id="circle391" />
+          <path
+             class="l45"
+             style="display:inline;fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
+             d="m -132.12385,-64.132876 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,-1.02 2.04,0"
+             id="path393"
+             inkscape:connector-curvature="0" />
+          <circle
+             class="l20"
+             cx="-140.74385"
+             cy="-65.152878"
+             r="0.69999999"
+             style="display:inline;fill:none;stroke:#000000;stroke-width:0.005"
+             id="circle395" />
+          <path
+             class="l45"
+             style="display:inline;fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
+             d="m -141.76385,-64.132876 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,-1.02 2.04,0"
+             id="path397"
+             inkscape:connector-curvature="0" />
+          <line
+             class="l20"
+             x1="-129.52385"
+             y1="-37.615086"
+             x2="-129.57385"
+             y2="-37.615086"
+             style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
+             id="line265" />
+          <line
+             class="l20"
+             x1="-142.27385"
+             y1="-37.615086"
+             x2="-142.32385"
+             y2="-37.615086"
+             style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
+             id="line269" />
+          <circle
+             class="j29"
+             cx="-138.46385"
+             cy="-37.445087"
+             r="0.85000002"
+             id="circle273"
+             style="display:inline;fill:#c8c8c8" />
+          <circle
+             class="j30"
+             cx="-138.46385"
+             cy="-37.445087"
+             r="0.85000002"
+             id="circle275"
+             style="display:inline;fill:#c8c8c8" />
+          <circle
+             class="j17"
+             cx="-138.46385"
+             cy="-37.445087"
+             r="0.75"
+             id="circle277"
+             style="display:inline;fill:#32c832" />
+          <circle
+             class="j0"
+             cx="-138.46385"
+             cy="-37.445087"
+             r="0.5"
+             id="circle279"
+             style="display:inline;fill:#ffffff" />
+          <path
+             class="l44"
+             style="display:inline;fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
+             d="m -139.48385,-36.425104 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,0 0,-2.04 m 2.04,2.04 0,-2.04"
+             id="path281"
+             inkscape:connector-curvature="0" />
+          <circle
+             class="j29"
+             cx="-135.92384"
+             cy="-37.445087"
+             r="0.85000002"
+             id="circle283"
+             style="display:inline;fill:#c8c8c8" />
+          <circle
+             class="j30"
+             cx="-135.92384"
+             cy="-37.445087"
+             r="0.85000002"
+             id="circle285"
+             style="display:inline;fill:#c8c8c8" />
+          <circle
+             class="j17"
+             cx="-135.92384"
+             cy="-37.445087"
+             r="0.75"
+             id="circle287"
+             style="display:inline;fill:#32c832" />
+          <circle
+             class="j0"
+             cx="-135.92384"
+             cy="-37.445087"
+             r="0.5"
+             id="circle289"
+             style="display:inline;fill:#ffffff" />
+          <path
+             class="l44"
+             style="display:inline;fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
+             d="m -136.94385,-36.425104 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,0 0,-2.04 m 2.04,2.04 0,-2.04"
+             id="path291"
+             inkscape:connector-curvature="0" />
+          <circle
+             class="j29"
+             cx="-133.38385"
+             cy="-37.445087"
+             r="0.85000002"
+             id="circle293"
+             style="display:inline;fill:#c8c8c8" />
+          <circle
+             class="j30"
+             cx="-133.38385"
+             cy="-37.445087"
+             r="0.85000002"
+             id="circle295"
+             style="display:inline;fill:#c8c8c8" />
+          <circle
+             class="j17"
+             cx="-133.38385"
+             cy="-37.445087"
+             r="0.75"
+             id="circle297"
+             style="display:inline;fill:#32c832" />
+          <circle
+             class="j0"
+             cx="-133.38385"
+             cy="-37.445087"
+             r="0.5"
+             id="circle299"
+             style="display:inline;fill:#ffffff" />
+          <path
+             class="l44"
+             style="display:inline;fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
+             d="m -134.40385,-36.425104 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,0 0,-2.04 m 2.04,2.04 0,-2.04"
+             id="path301"
+             inkscape:connector-curvature="0" />
+          <circle
+             class="l20"
+             cx="-140.74385"
+             cy="-36.615086"
+             r="0.69999999"
+             style="display:inline;fill:none;stroke:#000000;stroke-width:0.005"
+             id="circle303" />
+          <path
+             class="l45"
+             style="display:inline;fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
+             d="m -141.76385,-35.595104 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,-1.02 2.04,0"
+             id="path305"
+             inkscape:connector-curvature="0" />
+          <circle
+             class="l20"
+             cx="-131.10385"
+             cy="-36.615086"
+             r="0.69999999"
+             style="display:inline;fill:none;stroke:#000000;stroke-width:0.005"
+             id="circle307" />
+          <path
+             class="l45"
+             style="display:inline;fill:none;stroke:#c8c8c8;stroke-width:0.0254;stroke-linecap:round"
+             d="m -132.12385,-35.595104 2.04,-2.04 m -2.04,0 2.04,2.04 m -2.04,-1.02 2.04,0"
+             id="path309"
+             inkscape:connector-curvature="0" />
         </g>
+        <line
+           id="line317"
+           style="fill:none;stroke:#c8c8c8;stroke-width:0.25;stroke-linecap:round"
+           y2="-60.652878"
+           x2="-131.08385"
+           y1="-61.152878"
+           x1="-130.58385"
+           class="l21" />
+        <line
+           id="line319"
+           style="fill:none;stroke:#c8c8c8;stroke-width:0.25;stroke-linecap:round"
+           y2="-61.152878"
+           x2="-131.58385"
+           y1="-60.652878"
+           x1="-131.08385"
+           class="l21" />
         <g
-           id="g63">
-          <title
-             id="title65">PART U$1</title>
+           id="silkscreen">
+          <line
+             class="l21"
+             x1="-131.08385"
+             y1="-60.652878"
+             x2="-131.08385"
+             y2="-62.652878"
+             style="fill:none;stroke:#c8c8c8;stroke-width:0.25;stroke-linecap:round"
+             id="line321" />
+          <text
+             y="-66.236877"
+             x="-135.31384"
+             class="l21"
+             style="font-size:1.39699996px;font-family:sans-serif;text-anchor:end;fill:#c8c8c8"
+             id="text359">M</text>
+          <text
+             y="-34.898903"
+             x="-136.4693"
+             class="l21"
+             style="font-size:1.39699996px;font-family:sans-serif;fill:#c8c8c8"
+             id="text271">F</text>
         </g>
       </g>
-      <line
-         id="line315"
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         y2="-67.552879"
-         x2="-142.32385"
-         y1="-67.552879"
-         x1="-129.52385"
-         class="l20" />
-      <line
-         id="line329"
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         y2="-63.152874"
-         x2="-142.27385"
-         y1="-63.152874"
-         x1="-146.12386"
-         class="l20" />
-      <line
-         id="line331"
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         y2="-63.152874"
-         x2="-129.57385"
-         y1="-63.152874"
-         x1="-125.72385"
-         class="l20" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path333"
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         d="m -129.57385,-64.152874 a 0.50000001,0.5 0 1 0 0,1"
-         class="l20" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path335"
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         d="m -142.27385,-63.152874 a 0.50000001,0.5 0 0 0 0,-1"
-         class="l20" />
-      <line
-         id="line337"
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         y2="-64.152878"
-         x2="-142.32385"
-         y1="-67.552879"
-         x1="-142.32385"
-         class="l20" />
-      <line
-         id="line341"
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         y2="-64.152878"
-         x2="-129.52385"
-         y1="-67.552879"
-         x1="-129.52385"
-         class="l20" />
-      <line
-         id="line233"
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         y2="-41.552876"
-         x2="-129.52385"
-         y1="-41.552876"
-         x1="-142.32385"
-         class="l20" />
-      <line
-         id="line243"
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         y2="-45.952877"
-         x2="-142.27385"
-         y1="-45.952877"
-         x1="-146.12386"
-         class="l20" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path259"
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         d="m -142.27385,-44.952877 a 0.50000002,0.50000002 0 0 0 0,-1"
-         class="l20" />
-      <line
-         id="line263"
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         y2="-44.952877"
-         x2="-129.52385"
-         y1="-41.552876"
-         x1="-129.52385"
-         class="l20" />
-      <line
-         id="line267"
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         y2="-44.952877"
-         x2="-142.32385"
-         y1="-41.552876"
-         x1="-142.32385"
-         class="l20" />
-      <line
-         class="l20"
-         x1="-125.72799"
-         y1="-45.952877"
-         x2="-129.57799"
-         y2="-45.952877"
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         id="line4087" />
-      <path
-         class="l20"
-         d="m -129.57798,-44.952877 a 0.50000002,0.50000002 0 0 1 0,-1"
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:round"
-         id="path4089"
-         inkscape:connector-curvature="0" />
     </g>
   </g>
 </svg>
